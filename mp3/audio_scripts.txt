@@ -1,0 +1,77 @@
+===============================================================================
+  INTELLIGENT MULTI-GAS SAFETY SYSTEM — AUDIO ALERT SCRIPTS
+===============================================================================
+
+File naming convention: DFPlayer Mini requires MP3 files named 0001.mp3,
+0002.mp3, etc., placed in the root directory of the MicroSD card in mp3 folder - (FAT32).
+
+Recording specs:
+  - Format      : MP3, 128 kbps, mono, 44.1 kHz
+  - Peak volume : Normalized to -3 dB
+  - Pad         : 300 ms silence at start of each file (prevents clipping)
+
+-------------------------------------------------------------------------------
+  SYSTEM STATUS
+-------------------------------------------------------------------------------
+
+[0001.mp3] — System startup
+   "Multi-gas safety system activated. Sensors warming up.
+    Please wait thirty seconds."
+
+[0002.mp3] — System ready
+   "System ready. Monitoring air quality."
+
+
+-------------------------------------------------------------------------------
+  MQ-7 — CARBON MONOXIDE  (highest priority)
+-------------------------------------------------------------------------------
+
+[0003.mp3] — CO Warning
+   "Warning. Warning. Warning. Carbon monoxide detected. Please ventilate the area."
+
+[0004.mp3] — CO Critical
+   "Danger. Danger. Danger. High carbon monoxide level. Evacuate the area immediately.
+    Open doors and windows."
+
+
+-------------------------------------------------------------------------------
+  MQ-2 — LPG / METHANE / SMOKE
+-------------------------------------------------------------------------------
+
+[0005.mp3] — LPG Warning
+   "Warning. Warning. Warning. Gas leak detected. Please check your gas line and ventilate."
+
+[0006.mp3] — LPG Critical
+   "Danger. Danger. Danger. High gas concentration. Turn off the gas supply.
+    Do not use electrical switches. Evacuate immediately."
+
+[0007.mp3] — Smoke Warning
+   "Warning. Warning. Warning. Smoke detected. Please check for fire."
+
+[0008.mp3] — Smoke Critical
+   "Danger. Danger. Danger. Heavy smoke detected. Possible fire. Evacuate immediately."
+
+
+-------------------------------------------------------------------------------
+  MQ-135 — AIR QUALITY  (NH3 / CO2 / benzene)
+-------------------------------------------------------------------------------
+
+[0009.mp3] — Air Quality Warning
+   "Warning. Warning. Warning. Poor air quality detected. Please ventilate the room."
+
+[0010.mp3] — Air Quality Critical
+   "Danger. Danger. Danger. Hazardous air quality. Leave the area and ventilate immediately."
+
+
+-------------------------------------------------------------------------------
+  OPTIONAL — RELIABILITY & DEMO ENHANCEMENTS
+-------------------------------------------------------------------------------
+
+[0011.mp3] — All clear
+   "Air quality has returned to normal levels."
+
+[0012.mp3] — Sensor fault
+   "Sensor error detected. Please check system."
+
+[0013.mp3] — Test mode
+   "System self-test. This is not a real alert."
