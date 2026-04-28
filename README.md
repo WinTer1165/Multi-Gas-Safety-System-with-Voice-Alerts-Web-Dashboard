@@ -115,8 +115,5 @@ When several gases trigger thresholds simultaneously, the highest-priority chann
 | Rahma Khan Isha | 2121709 |
 | Md. Siam Hossain | 2121436 |
 
-**Faculty:** Mr. Acramul Haque Kabir (ACQ) · **Lab Instructor:** Moshiur Rahman
-
-## License
-
-MIT License
+**Faculty:** Mr. Acramul Haque Kabir (ACQ)  
+**Lab Instructor:** Moshiur Rahman
