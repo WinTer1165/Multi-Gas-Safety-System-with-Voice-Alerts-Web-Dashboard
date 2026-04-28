@@ -2,20 +2,21 @@
 
 An embedded real-time gas-safety monitor built around the **STM32F103C8T6 (Blue Pill)** microcontroller. It samples three MQ-series gas sensors (MQ-2, MQ-7, MQ-135), classifies readings into Normal / Warning / Critical tiers, and reacts through four parallel output channels: an OLED display, a passive buzzer, a DFPlayer Mini speaking pre-recorded MP3 alerts, and a self-hosted web dashboard served by an ESP8266 in Wi-Fi Access Point mode, no internet required.
 
-> **Course:** CSE331L: Microprocessor Interfacing & Embedded Systems Lab, North South University
-> 
+> **Course:** CSE331L.7: Microprocessor Interfacing & Embedded Systems Lab, North South University         
 > **Semester:** Spring 2026
->
-> **Section:** 7
->
-> **Group:** 5
 
 
-![Project breadboard build](assets/project_image-annotated_resized.png)
+<img src="assets/project_image-annotated_resized.png" alt="Device Photo 3" style="width:600px;"/>
 
 ---
 
 ## Features
+
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/5491e6d5-c120-4d43-bd79-893c2ccad06b" autoplay loop muted playsinline width="600"></video>
+  <br>
+  <i> 5x Speed Demo: Real-time sensor processing and OLED updates</i>
+</div>
 
 - **Three-gas detection.** MQ-2 for LPG / combustibles, MQ-7 for carbon monoxide, MQ-135 for CO₂ / air quality. All three sensors share one ADC handle through software channel multiplexing.
 - **Three severity tiers.** `NORMAL`, `WARNING`, `CRITICAL` — configurable per-gas cutoffs in `thresholds.h`, with debounce (2 confirmation cycles) to suppress single-sample glitches and a post-calibration grace period.
