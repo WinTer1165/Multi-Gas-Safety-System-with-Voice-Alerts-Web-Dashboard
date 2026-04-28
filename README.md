@@ -18,6 +18,8 @@ An embedded real-time gas-safety monitor built around the **STM32F103C8T6 (Blue 
   <i> 5x Speed Demo: Real-time sensor processing and OLED updates</i>
 </div>
 
+---
+
 - **Three-gas detection.** MQ-2 for LPG / combustibles, MQ-7 for carbon monoxide, MQ-135 for CO₂ / air quality. All three sensors share one ADC handle through software channel multiplexing.
 - **Three severity tiers.** `NORMAL`, `WARNING`, `CRITICAL` — configurable per-gas cutoffs in `thresholds.h`, with debounce (2 confirmation cycles) to suppress single-sample glitches and a post-calibration grace period.
 - **Multi-modal alerting.** Distinct buzzer patterns (1 Hz blip on warn, 5 Hz urgent on crit), spoken MP3 announcements only on critical events to avoid alarm fatigue, and a flashing inverted OLED overlay.
