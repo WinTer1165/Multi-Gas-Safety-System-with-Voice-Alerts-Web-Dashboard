@@ -16,7 +16,6 @@ The whole project is intentionally written without floating-point math, without 
 6. [The OLED rendering layer](#6-the-oled-rendering-layer)
 7. [The cooperative scheduler in `main.c`](#7-the-cooperative-scheduler-in-mainc)
 8. [The ESP8266 dashboard pipeline](#8-the-esp8266-dashboard-pipeline)
-9. [Things to defend at viva](#9-things-to-defend-at-viva)
 
 ---
 
