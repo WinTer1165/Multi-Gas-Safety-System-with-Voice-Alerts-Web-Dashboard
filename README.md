@@ -6,7 +6,9 @@ An embedded real-time gas-safety monitor built around the **STM32F103C8T6 (Blue 
 > **Semester:** Spring 2026
 
 
-<img src="assets/project_image-annotated_resized.png" alt="Device Photo 3" style="width:600px;"/>
+<img src="assets/project_image-annotated_resized.png" alt="Device Photo 1" style="width:600px;"/>
+
+<img src="assets/web_and_api_ui.png" alt="Device Photo 2" style="width:600px;"/>
 
 ---
 
